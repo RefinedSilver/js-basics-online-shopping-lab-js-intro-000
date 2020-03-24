@@ -64,12 +64,12 @@ function total() {
 // 	}
 // 	return tempItem;
 // }
-function removeFromCart() {
+function removeFromCart(item) {
   let tempItem = [];
   for(let i = 0; i < cart.length; i++) {
     if(cart[i].itemName === true) {
       state = true;
-      cart = cart.slice(0, i).concat(cart.slice(i + 1))
+      cart = cart.splice(i, 1);
       return cart;
     }
   }
