@@ -67,8 +67,8 @@ function total() {
 function removeFromCart(item) {
   let tempItem = [];
   for(let i = 0; i < cart.length; i++) {
+    let state = true;
     if(cart[i].itemName === true) {
-      let state = true;
       cart = cart.splice(i, 1);
       return cart;
     }
