@@ -53,21 +53,21 @@ function total() {
 	return result;
 }
 
-function removeFromCart(remItem = []) {
-	let tempItem = [];
-
-	while (item >= 0) {
-		if (!item) {
-			return `That item is not in your cart.`;
-		}
-		tempItem.push(item.name)
-	}
-	return tempItem;
-}
+// function removeFromCart(remItem = []) {
+// 	let tempItem = [];
+//
+// 	while (item >= 0) {
+// 		if (!item) {
+// 			return `That item is not in your cart.`;
+// 		}
+// 		tempItem.push(item.name)
+// 	}
+// 	return tempItem;
+// }
 function removeFromCart(item) {
   let tempItem = [];
   for(let i = 0; i < cart.length; i++) {
-    if(cart[i].itemPrice === true) {
+    if(cart[i].itemName === true) {
       state = true;
       cart = cart.slice(0, i).concat(cart.slice(i + 1))
       return cart;
