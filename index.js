@@ -64,7 +64,7 @@ function total() {
 // 	}
 // 	return tempItem;
 // }
-function removeFromCart(item) {
+function removeFromCart() {
   let tempItem = [];
   for(let i = 0; i < cart.length; i++) {
     if(cart[i].itemName === true) {
